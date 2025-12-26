@@ -1,0 +1,54 @@
+// ===============================
+// LISTADO DE MASAJISTAS (página /masajistas)
+// ===============================
+
+.masseuse-list {
+  h1 {
+    color: $gold-soft;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.masseuse-list-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #000;
+  color: #f5f5f5;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.35);
+
+    .masseuse-list-photo img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.masseuse-list-photo {
+  height: 260px;
+  background: #111;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+  }
+}
+
+.masseuse-list-body {
+  padding: 1rem 1.2rem 0.75rem;
+}
+
+// CTA en ficha de masajista (show)
+.masseuse-cta {
+  .btn {
+    padding-block: 0.65rem;     // misma altura para todos los botones
+    font-size: 0.95rem;
+  }
+}

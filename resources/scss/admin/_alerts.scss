@@ -1,0 +1,19 @@
+// ===============================
+// ALERTAS
+// ===============================
+
+.alert {
+  border-radius: 0.75rem;
+}
+
+.alert-success {
+  background-color: rgba(25, 135, 84, 0.1);
+  border-color: #198754;
+  color: #c6f6d5;
+}
+
+.alert-danger {
+  background-color: rgba(220, 53, 69, 0.12);
+  border-color: #dc3545;
+  color: #ffd5db;
+}

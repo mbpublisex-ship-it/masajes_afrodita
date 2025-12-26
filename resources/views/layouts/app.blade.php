@@ -7,7 +7,9 @@
 
     {{-- Aquí cargamos todo (Bootstrap + nuestro SCSS) vía Vite --}}
     @vite(['resources/js/app.js', 'resources/scss/app.scss'])
-    @vite(['resources/js/app.js', 'resources/scss/admin.scss'])
+    @if(request()->is('admin*'))
+        @vite(['resources/js/app.js', 'resources/scss/admin.scss'])
+    @endif
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
