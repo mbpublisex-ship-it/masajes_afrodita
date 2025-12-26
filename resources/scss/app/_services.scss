@@ -1,0 +1,123 @@
+// ===============================
+// SERVICIOS – LISTADO / FICHA
+// ===============================
+
+.section-services {
+
+  h1,
+  h2 {
+    color: $gold-soft;
+  }
+
+  // Imagen grande de la cabecera (si la usas)
+  .services-hero-image {
+    height: 220px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    background: #050505;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  // Tarjetas de cada masaje
+  .service-card {
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: #111;
+    color: #f1f1f1;
+    overflow: hidden;
+
+    .card-title {
+      color: $gold-soft;
+      font-family: $font-heading;
+    }
+
+    .service-card-image {
+      height: 190px;
+      background: #000;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+    }
+
+    // fallback simple con degradado si no hay imagen
+    .service-card-image--fallback {
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 55%),
+        linear-gradient(135deg, #311018, #0b0507);
+    }
+
+    &:hover {
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
+
+      .service-card-image img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Ficha de servicio
+.service-show {
+  .service-image-wrapper {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .service-image-placeholder {
+      width: 100%;
+      padding-top: 70%;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 60%),
+        linear-gradient(135deg, #311018, #0b0507);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+  }
+
+  .service-contact-card {
+    background: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .service-meta {
+    .service-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .service-meta-icon {
+      font-size: 1rem;
+      color: $primary;
+    }
+  }
+
+  .btn-back {
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #f5f5f5;
+
+    &:hover {
+      background-color: #f5f5f5;
+      color: #000;
+    }
+  }
+}

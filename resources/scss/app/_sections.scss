@@ -1,0 +1,30 @@
+// ===============================
+// SECCIONES CENTRALES (bloque común)
+// ===============================
+
+.section-about,
+.section-masseuses,
+.section-services {
+  background: #050505;
+}
+
+.section-block {
+  background: #000;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  @media (max-width: 767.98px) {
+    padding: 2rem 1.25rem;
+  }
+}
+
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: $gold-muted;
+  margin-bottom: 0.25rem;
+}

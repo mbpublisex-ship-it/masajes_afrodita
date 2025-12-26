@@ -1,0 +1,210 @@
+// ===============================
+// CABECERA PÚBLICA · LOGO IMAGEN
+// ===============================
+
+.site-header {
+  position: relative;
+  color: #fff;
+
+  // --------------------------------
+  // FRANJA SUPERIOR · DIRECCIÓN
+  // --------------------------------
+  .header-location-bar {
+    background-color: #000;
+    border-bottom: 1px solid #d9ac4d;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    .container {
+      padding-inline: 0.75rem;
+    }
+
+    .header-location-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.5rem;
+      color: #f5f5f5;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:hover {
+        color: #ffd980;
+      }
+
+      .location-icon {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  // Pequeño ajuste para móvil: permitimos salto de línea
+  @media (max-width: 575.98px) {
+    .header-location-link {
+      white-space: normal;
+      text-align: center;
+      line-height: 1.4;
+    }
+  }
+
+  // --------------------------------
+  // BANDA CON LOGO
+  // --------------------------------
+  .header-top {
+    position: relative;
+    padding: 2.4rem 0 2rem;
+    overflow: hidden;
+
+    // Foto de fondo (instalacion-011) en escritorio/tablet
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("/images/instalaciones/instalacion-011.jpg")
+        center center / cover no-repeat;
+      opacity: 0.55; // controla cuánto se ve la foto
+      z-index: 0;
+      top: -150px;
+    }
+
+    // Velo negro por encima de la foto
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: #000;
+      opacity: 0.45;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // Enlace del logo
+  .header-brand {
+    display: inline-block;
+  }
+
+  // Imagen del logo
+  .header-logo-icon-img {
+    display: block;
+    width: min(420px, 72vw); // tamaño base
+    height: auto;
+    filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.9));
+  }
+
+  // --------------------------------
+  // NAVBAR INFERIOR
+  // --------------------------------
+  .header-nav {
+    background-color: #000;
+    border-top: 1px solid #d9ac4d;
+    border-bottom: 1px solid #d9ac4d;
+
+    .navbar-collapse {
+      background-color: #000; // menú desplegado en negro
+      text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: "Mulish", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: #f5f5f5;
+      font-weight: 500;
+      padding-inline: 1.1rem;
+      position: relative;
+      transition: color 0.15s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #ffd980;
+    }
+
+    // Botón hamburguesa
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.4);
+      padding: 0.35rem 0.6rem;
+      margin: 0.25rem 0rem;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.12rem rgba(217, 172, 77, 0.45);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  // --------------------------------
+  // SOLO ESCRITORIO: subrayado activo
+  // --------------------------------
+  @media (min-width: 768px) {
+    .header-nav .navbar-nav .nav-link.active::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0.1rem;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 2px;
+      background: linear-gradient(90deg, #ffb347, #f8e3a4);
+      border-radius: 999px;
+    }
+  }
+
+  // --------------------------------
+  // RESPONSIVE
+  // --------------------------------
+
+  // MÓVIL
+  @media (max-width: 767.98px) {
+    .header-location-bar {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+    }
+
+    // 🔹 Ocultar solo "· Cómo llegar" en móvil
+    .header-location-bar .location-extra {
+      display: none;
+    }
+
+    .header-top {
+      padding: 1.8rem 0 1.5rem;
+      text-align: center;
+
+      &::before {
+        top: 0;
+        opacity: 0.45;
+      }
+
+      &::after {
+        opacity: 0.55;
+      }
+    }
+
+    .header-logo-icon-img {
+      width: min(300px, 78vw);
+    }
+  }
+
+  // ESCRITORIO
+  @media (min-width: 992px) {
+    .header-top {
+      padding: 3rem 0 2.4rem;
+    }
+
+    .header-logo-icon-img {
+      width: min(360px, 22vw); // más fino en desktop
+    }
+  }
+}

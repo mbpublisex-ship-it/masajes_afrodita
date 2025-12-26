@@ -1,0 +1,36 @@
+// ===============================
+// BOTONES EN ADMIN
+// ===============================
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:focus {
+    background-color: darken($primary, 6%);
+    border-color: darken($primary, 6%);
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover,
+  &:focus {
+    background-color: $primary;
+    color: #000;
+  }
+}
+
+.btn-outline-danger {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+
+  &:hover,
+  &:focus {
+    background-color: #ff6b6b;
+    color: #000;
+  }
+}

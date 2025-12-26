@@ -1,0 +1,24 @@
+// ===============================
+// BASE PANEL ADMIN
+// ===============================
+
+body.admin-body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+.admin-main {
+  padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #ffe0b3;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
