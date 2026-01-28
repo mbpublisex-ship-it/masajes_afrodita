@@ -15,8 +15,9 @@
                     </h1>
 
                     <p class="lead mb-4">
-                        Un espacio íntimo y tranquilo donde cada sesión está pensada para que desconectes del estrés
-                        diario y te centres en tu descanso y bienestar.
+                        Un refugio íntimo y sereno donde cada sesión está diseñada para bajar el ritmo, respirar
+                        profundo y regalarte un cuidado delicado para cuerpo y mente.
+                        {{-- Opción 2: Un espacio íntimo y sereno donde cada sesión invita a soltar el día, respirar despacio y volver a ti. --}}
                     </p>
                     <a href="#masseuses" class="btn btn-primary btn-lg me-2">
                         Ver masajistas
@@ -54,16 +55,16 @@
                         <h2 class="mb-3">El templo de Afrodita</h2>
                         <p>
                             Masajes el Templo de Afrodita es un espacio de masajes de bienestar ubicado en Villaverde Bajo –
-                            Butarque (28021, Madrid), pensado para personas adultas que buscan un momento de calma, desconexión
-                            y cuidado personal en un ambiente íntimo y discreto.
+                            Butarque (28021, Madrid), creado para personas adultas que desean una pausa de calma, desconexión
+                            y cuidado personal en un ambiente íntimo, discreto y acogedor.
                         </p>
                         <p>
-                            Nuestras masajistas combinan técnicas de masaje relajante y sensorial para ayudarte a liberar
-                            tensiones físicas y mentales, siempre desde el respeto, la cercanía y la profesionalidad.
+                            Nuestras masajistas combinan técnicas de masaje relajante y sensorial para aliviar tensiones
+                            físicas y mentales con un trato cercano, respetuoso y profesional.
                         </p>
                         <p class="small text-muted mb-0">
                             Los servicios que se ofrecen son exclusivamente de bienestar y relajación, sin carácter sanitario
-                            y sin prestación de servicios de índole sexual. No sustituyen en ningún caso tratamientos médicos
+                            ni prestación de servicios de índole sexual. No sustituyen en ningún caso tratamientos médicos
                             o fisioterapéuticos.
                         </p>
                     </div>
@@ -81,7 +82,7 @@
 
                 @if($masseuses->isEmpty())
                     <p class="text-center text-muted mb-0">
-                        Pronto verás aquí a nuestras masajistas disponibles.
+                        Muy pronto conocerás a nuestras masajistas disponibles.
                     </p>
                 @else
                     <div class="row g-4">
@@ -142,7 +143,7 @@
     <div class="container">
         <div class="section-block">
             <p class="section-kicker text-md-center">Carta de masajes</p>
-            <h2 class="mb-4 text-md-center">Tipos de masajes</h2>
+            <h2 class="mb-4 text-md-center">Rituales de masaje</h2>
 
             @php
                 // Solo mostramos los 3 primeros en la home
@@ -151,7 +152,7 @@
 
             @if($servicesHome->isEmpty())
                 <p class="text-center text-muted mb-0">
-                    Pronto detallaremos todos nuestros servicios.
+                    Muy pronto detallaremos todos nuestros masajes.
                 </p>
             @else
                 <div class="row g-4">
@@ -206,7 +207,7 @@
                 {{-- Botón para ver todo el listado --}}
                 <div class="text-center mt-4">
                     <a href="{{ route('services.index') }}" class="btn btn-outline-light">
-                        Ver toda la carta de masajes
+                        Ver la carta completa
                     </a>
                 </div>
             @endif
@@ -225,15 +226,15 @@
                         <h2 class="mb-3">Nuestras instalaciones</h2>
                         <p class="mb-3">
                             Un espacio íntimo y cuidado al detalle, con salas preparadas para masajes
-                            de bienestar y relajación en un ambiente tranquilo y discreto.
+                            de bienestar y relajación en un ambiente sereno y discreto.
                         </p>
                         <p class="mb-4">
-                            Iluminación cálida, velas, aromas suaves y decoración con toques orientales
-                            para ayudarte a desconectar desde el primer minuto.
+                            Iluminación cálida, velas, aromas suaves y una decoración con alma oriental
+                            para que tus sentidos se relajen desde el primer minuto.
                         </p>
 
                         <a href="{{ route('installations.index') }}" class="btn btn-outline-light">
-                            Ver todas las instalaciones
+                            Descubrir el espacio
                         </a>
                     </div>
 
@@ -260,9 +261,9 @@
                     {{-- COLUMNA IZQUIERDA: INFO + BOTONES --}}
                     <div class="col-lg-6">
                         <p class="mb-3">
-                            Indícanos por teléfono o WhatsApp el tipo de masaje que te interesa
+                            Cuéntanos por teléfono o WhatsApp el tipo de masaje que te apetece
                             y el horario aproximado que prefieres. Te responderemos para confirmar
-                            la cita y resolver cualquier duda.
+                            la cita y resolver cualquier duda con cercanía.
                         </p>
 
                         <p class="mb-2">

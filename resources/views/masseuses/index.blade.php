@@ -11,14 +11,14 @@
             <p class="section-kicker">Nuestro equipo</p>
             <h1 class="mb-2">Nuestras masajistas</h1>
             <p class="text-muted mb-0">
-                Masajistas de bienestar formadas para ofrecerte sesiones relajantes,
-                cercanas y respetuosas en un entorno íntimo.
+                Masajistas de bienestar formadas para ofrecerte sesiones envolventes,
+                cercanas y respetuosas en un entorno íntimo y cuidado.
             </p>
         </div>
 
         @if ($masseuses->isEmpty())
             <p class="text-center text-muted">
-                Pronto tendrás aquí todas las masajistas del templo.
+                Muy pronto conocerás a todas las masajistas del templo.
             </p>
         @else
             <div class="row g-4">

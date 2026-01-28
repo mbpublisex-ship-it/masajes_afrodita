@@ -79,7 +79,7 @@
             {{-- Aviso legal --}}
             <p class="small text-muted mb-0">
                 Este masaje es exclusivamente de bienestar, no sanitario.
-                No se ofrecen servicios de carácter médico, fisioterapéutico ni sexuales.
+                No se ofrecen servicios de carácter médico, fisioterapéutico ni de carácter sexual.
             </p>
 
             {{-- Botón volver --}}

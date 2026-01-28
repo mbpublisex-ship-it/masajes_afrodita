@@ -80,7 +80,7 @@
                             <a href="https://wa.me/34674583265?text={{ $whatsappText }}"
                             class="btn btn-whatsapp d-flex align-items-center justify-content-center">
                                 <i class="bi bi-whatsapp me-2"></i>
-                                Reservar masaje con {{ $masseuse->name }}
+                                Reservar con {{ $masseuse->name }}
                             </a>
 
                             {{-- Llamar ahora --}}
@@ -93,7 +93,7 @@
                             {{-- Ver tipos de masajes --}}
                             <a href="{{ route('services.index') }}"
                             class="btn btn-outline-primary">
-                                Ver tipos de masajes
+                                Ver la carta de masajes
                             </a>
                         </div>
 
@@ -101,7 +101,8 @@
 
 
                         <p class="small text-muted mt-3 mb-0">
-                            La reserva se gestiona siempre a través de Masajes el Templo de Afrodita.
+                            La reserva se gestiona siempre a través de Masajes el Templo de Afrodita, con un trato
+                            cercano y discreto.
                             Servicios de masaje de bienestar y relajación, exclusivos para personas mayores de 18 años.
                             No se ofrecen servicios de carácter sexual.
                         </p>
@@ -123,13 +124,14 @@
                         <p>{{ $masseuse->short_description }}</p>
                     @else
                         <p class="text-muted">
-                            Más información sobre {{ $masseuse->displayName() }} estará disponible próximamente.
+                            Muy pronto compartiremos más detalles sobre {{ $masseuse->displayName() }}.
                         </p>
                     @endif
 
                     <p class="small text-muted mb-0">
                         Las sesiones con {{ $masseuse->displayName() }} están orientadas a la relajación,
-                        el bienestar y el cuidado personal. No sustituyen tratamientos médicos ni fisioterapéuticos.
+                        el bienestar y el cuidado personal, con un enfoque sensorial y delicado.
+                        No sustituyen tratamientos médicos ni fisioterapéuticos.
                     </p>
                 </section>
 

@@ -13,20 +13,20 @@
                     <h1 class="mb-3 text-center">Nuestras instalaciones</h1>
 
                     <p class="mb-3">
-                        En <strong>Masajes el Templo de Afrodita</strong> hemos creado un espacio íntimo,
-                        tranquilo y cuidado al detalle para que puedas desconectar desde el primer momento.
+                        En <strong>Masajes el Templo de Afrodita</strong> hemos creado un refugio íntimo,
+                        sereno y cuidado al detalle para que desconectes desde el primer momento.
                     </p>
 
                     <p class="mb-3">
                         Iluminación cálida, velas, aromas suaves y una decoración con toques orientales hacen
                         que cada sala esté pensada para el bienestar y la relajación, siempre en un entorno
-                        discreto y acogedor.
+                        discreto, elegante y acogedor.
                     </p>
 
                     <ul class="mb-3">
                         <li>Salas amplias con camilla, toallas y material siempre limpio.</li>
-                        <li>Iluminación tenue y velas para un ambiente relajante y sensorial.</li>
-                        <li>Detalles decorativos que invitan a la calma y al descanso.</li>
+                        <li>Iluminación tenue y velas para un ambiente sensorial y envolvente.</li>
+                        <li>Detalles decorativos que invitan a la calma, la respiración y el descanso.</li>
                         <li>Zona de recepción discreta y atención personalizada.</li>
                     </ul>
 
@@ -79,9 +79,9 @@
             @endphp
 
             <div class="text-center mt-5">
-                <h2 class="h5 mb-2">¿Te gusta el Templo de Afrodita?</h2>
+                <h2 class="h5 mb-2">¿Te apetece vivir el Templo de Afrodita?</h2>
                 <p class="mb-4">
-                    Si quieres vivir la experiencia, escríbenos por WhatsApp o llámanos y te informamos sin compromiso.
+                    Si deseas vivir la experiencia, escríbenos por WhatsApp o llámanos y te informamos sin compromiso.
                 </p>
 
                 <div class="d-inline-flex flex-wrap justify-content-center gap-3">
