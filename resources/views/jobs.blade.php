@@ -21,7 +21,7 @@
                     <p class="mb-3">
                         No es imprescindible experiencia previa en masajes: se valora, pero lo más importante
                         es la buena actitud, la imagen cuidada, la discreción y las ganas de trabajar en un entorno
-                        respetuoso.
+                        respetuoso, elegante y cálido.
                     </p>
                 </div>
             </div>
@@ -41,7 +41,8 @@
 
                         <h2 class="h5 mb-3">Sobre el tipo de masajes</h2>
                         <p class="mb-3">
-                            El centro está enfocado en <strong>masajes de bienestar y relajación</strong>.
+                            El centro está enfocado en <strong>masajes de bienestar y relajación</strong>,
+                            con un enfoque sensorial y cuidado.
                             No se ofrecen servicios de carácter sexual ni se realizan prácticas que vulneren
                             la normativa vigente en España.
                         </p>
@@ -64,7 +65,7 @@
                     <div class="job-highlight">
                         <h2 class="h6 mb-3">¿Qué ofrecemos?</h2>
                         <ul class="mb-3">
-                            <li>Ambiente discreto y cuidado.</li>
+                            <li>Ambiente discreto, cuidado y acogedor.</li>
                             <li>Citas siempre con reserva previa.</li>
                             <li>Trabajo por turnos según disponibilidad.</li>
                             <li>Acompañamiento para aprender la dinámica del centro.</li>

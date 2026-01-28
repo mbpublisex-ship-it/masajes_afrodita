@@ -16,8 +16,9 @@
                     <p class="section-kicker">Carta de masajes</p>
                     <h1 class="mb-3">Nuestros masajes de bienestar</h1>
                     <p class="lead text-muted mb-0">
-                        Masajes pensados para ayudarte a desconectar, relajar la mente
-                        y cuidar tu cuerpo en un ambiente íntimo y respetuoso.
+                        Rituales sensoriales pensados para que te sueltes, calmes la mente
+                        y cuides tu cuerpo en un ambiente íntimo, elegante y respetuoso.
+                        {{-- Opción 2: Masajes diseñados para desconectar, respirar profundo y mimar el cuerpo en un entorno íntimo y respetuoso. --}}
                     </p>
                 </div>
 
@@ -34,7 +35,7 @@
         {{-- LISTADO DE MASAJES --}}
         @if($services->isEmpty())
             <p class="text-center text-muted">
-                Pronto añadiremos todos los masajes disponibles en nuestra carta.
+                Muy pronto añadiremos todos los masajes disponibles en nuestra carta.
             </p>
         @else
             <div class="row g-4">
