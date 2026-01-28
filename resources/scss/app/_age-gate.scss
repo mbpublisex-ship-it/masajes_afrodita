@@ -1,0 +1,109 @@
+.age-gate-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1055;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.age-gate-overlay.is-hidden {
+    display: none;
+}
+
+.age-gate-overlay__backdrop {
+    position: absolute;
+    inset: 0;
+}
+
+.age-gate-overlay__content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    border: 1px solid #d9ac4d;
+    border-radius: 16px;
+    background: #050505;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.age-gate-overlay__title {
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    font-weight: 600;
+    color: #f8f5ef;
+}
+
+.age-gate-overlay__text {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d9d9d9;
+}
+
+.age-gate-overlay__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.age-gate-overlay__btn {
+    min-width: 220px;
+    padding: 0.85rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+        color 0.2s ease, border-color 0.2s ease;
+}
+
+.age-gate-overlay__btn--accept {
+    background-color: #d9ac4d;
+    border: 1px solid #d9ac4d;
+    color: #050505;
+    box-shadow: 0 12px 24px rgba(217, 172, 77, 0.3);
+}
+
+.age-gate-overlay__btn--accept:hover,
+.age-gate-overlay__btn--accept:focus {
+    background-color: #e4bf63;
+    border-color: #e4bf63;
+    color: #050505;
+    transform: translateY(-1px);
+}
+
+.age-gate-overlay__btn--exit {
+    background-color: transparent;
+    border: 1px solid #f2efe8;
+    color: #f2efe8;
+}
+
+.age-gate-overlay__btn--exit:hover,
+.age-gate-overlay__btn--exit:focus {
+    background-color: rgba(242, 239, 232, 0.12);
+    border-color: #f2efe8;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 576px) {
+    .age-gate-overlay__content {
+        padding: 2rem 1.5rem;
+    }
+
+    .age-gate-overlay__actions {
+        flex-direction: column;
+    }
+
+    .age-gate-overlay__btn {
+        width: 100%;
+    }
+}

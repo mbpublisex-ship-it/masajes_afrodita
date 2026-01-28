@@ -77,6 +77,29 @@
 
 @else
     {{-- 🌙 CABECERA PÚBLICA ESTILO TANTRA PALACE --}}
+    @if(!request()->is('admin*') && !request()->routeIs('login') && !request()->routeIs('register'))
+        <div class="age-gate-overlay is-hidden" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
+            <div class="age-gate-overlay__backdrop"></div>
+            <div class="age-gate-overlay__content">
+                <h2 id="age-gate-title" class="age-gate-overlay__title">
+                    Contenido solo para mayores de 18 años
+                </h2>
+                <p class="age-gate-overlay__text">
+                    Este sitio está dirigido a público adulto y muestra imágenes sugerentes.
+                    No ofrecemos servicios sexuales, únicamente masajes de bienestar y experiencias sensoriales.
+                    Si eres mayor de 18 años, puedes continuar.
+                </p>
+                <div class="age-gate-overlay__actions">
+                    <button type="button" class="btn age-gate-overlay__btn age-gate-overlay__btn--accept">
+                        Sí, soy mayor de 18 años
+                    </button>
+                    <button type="button" class="btn age-gate-overlay__btn age-gate-overlay__btn--exit">
+                        Salir
+                    </button>
+                </div>
+            </div>
+        </div>
+    @endif
 
     <header class="site-header">
 
