@@ -198,21 +198,26 @@
     {{-- Botones flotantes de contacto (solo parte pública) --}}
     @if(!auth()->check() || !request()->is('admin*'))
         <div class="floating-contact">
-            {{-- Botón llamar --}}
             <a href="tel:+34674583265"
             class="floating-btn floating-btn-phone"
-            aria-label="Llamar al Templo de Afrodita">
+            aria-label="Llamar por teléfono">
                 <i class="bi bi-telephone-fill"></i>
             </a>
 
-            {{-- Botón WhatsApp --}}
-            <a href="https://wa.me/34674583265?text={{ rawurlencode('Hola, me gustaría pedir información o reservar un masaje de bienestar. Vengo desde la web.') }}"
+            <a href="https://wa.me/34674583265"
             class="floating-btn floating-btn-whatsapp"
-            aria-label="Escribir por WhatsApp al Templo de Afrodita"
-            target="_blank" rel="noopener">
+            aria-label="Escribir por WhatsApp">
                 <i class="bi bi-whatsapp"></i>
             </a>
+
+            <!-- 👉 NUEVO BOTÓN TELEGRAM -->
+            <a href="https://t.me/Masajeseltemplodeafrodita"
+            class="floating-btn floating-btn-telegram"
+            aria-label="Abrir chat en Telegram">
+                <i class="bi bi-telegram"></i>
+            </a>
         </div>
+
     @endif
 </main>
 

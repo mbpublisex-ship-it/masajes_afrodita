@@ -5,63 +5,61 @@
 .floating-contact {
   position: fixed;
   right: 1.25rem;
-  bottom: 1.5rem;
+  bottom: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  z-index: 1050; // por encima del contenido y footer
+  gap: 0.5rem;
+  z-index: 1040;
+
+  @media (max-width: 575.98px) {
+    right: 0.9rem;
+    bottom: 0.9rem;
+  }
 }
 
-.floating-contact .floating-btn {
-  width: 52px;
-  height: 52px;
+.floating-btn {
+  width: 3rem;
+  height: 3rem;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   border: none;
+  text-decoration: none;
   color: #fff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    opacity 0.15s ease;
-}
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
 
-/* Teléfono */
-.floating-contact .floating-btn-phone {
-  background: linear-gradient(135deg, #252933, #6c757d);
-}
-
-/* WhatsApp */
-.floating-contact .floating-btn-whatsapp {
-  background-color: #25D366;
-}
-
-/* Iconos */
-.floating-contact .floating-btn i {
-  font-size: 1.5rem;
-}
-
-/* Hover (desktop) */
-.floating-contact .floating-btn:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.8);
-  opacity: 0.96;
-}
-
-/* Responsive: ajustar posición/tamaño en móvil */
-@media (max-width: 575.98px) {
-  .floating-contact {
-    right: 0.9rem;
-    bottom: 1rem;
-    gap: 0.45rem;
+  i {
+    font-size: 1.3rem;
   }
 
-  .floating-contact .floating-btn {
-    width: 48px;
-    height: 48px;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.75);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.65);
+    filter: brightness(1.05);
   }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  }
+}
+
+// Teléfono
+.floating-btn-phone {
+  background: linear-gradient(135deg, #d9ac4d, #f6e2a6);
+  color: #1b1205;
+}
+
+// WhatsApp
+.floating-btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+// Telegram (nuevo)
+.floating-btn-telegram {
+  background: #229ed9;
+  color: #fff;
 }
